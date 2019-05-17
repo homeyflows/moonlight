@@ -1,0 +1,56 @@
+input.onLightConditionChanged(LightCondition.Dark, function () {
+    light.setBrightness(10)
+    light.showRing(
+        `black black blue black black black black blue black black`
+    )
+    control.timer1.pauseUntil(control.timer5.seconds())
+    light.showRing(
+        `blue black blue black black blue black blue black black`
+    )
+    control.timer2.pauseUntil(control.timer5.seconds())
+    light.setBrightness(15)
+    light.showRing(
+        `blue black blue purple black blue black blue black purple`
+    )
+    control.timer3.pauseUntil(control.timer5.seconds())
+    light.showRing(
+        `blue blue blue purple black blue blue blue black purple`
+    )
+    control.timer4.pauseUntil(control.timer5.seconds())
+    light.setBrightness(20)
+    light.showRing(
+        `blue purple blue purple blue blue purple blue blue purple`
+    )
+    control.timer5.pauseUntil(control.timer5.seconds())
+    light.showRing(
+        `blue purple blue blue blue blue purple blue blue blue`
+    )
+    control.timer6.pauseUntil(control.timer5.seconds())
+    light.setBrightness(25)
+    light.showRing(
+        `blue blue blue blue blue blue blue blue blue blue`
+    )
+})
+input.onLightConditionChanged(LightCondition.Bright, function () {
+    light.setBrightness(10)
+    light.showRing(
+        `black black orange red orange black black orange red orange`
+    )
+    control.timer1.pauseUntil(control.timer5.seconds())
+    light.showRing(
+        `black yellow orange red black yellow black orange red black`
+    )
+    control.timer2.pauseUntil(control.timer5.seconds())
+    light.setBrightness(20)
+    light.showRing(
+        `white yellow orange red orange yellow white orange red orange`
+    )
+    light.setBrightness(30)
+    control.timer3.pauseUntil(control.timer5.seconds())
+    light.showRing(
+        `white yellow white red yellow yellow white white red yellow`
+    )
+    light.setBrightness(15)
+    light.setPixelColor(3, 0xff0000)
+    light.setPixelColor(8, 0xff0000)
+})
